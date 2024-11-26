@@ -260,7 +260,7 @@ class RecordPlugin extends BasePlugin<RecordPluginEvents, RecordPluginOptions> {
     }
 
     const emitWithBlob = (ev: 'record-pause' | 'record-end') => {
-      const blob = new Blob(recordedChunks, { type: mediaRecorder.mimeType })
+      const blob = new Blob(recordedChunks, { type: "audio/mpeg" })
       this.emit(ev, blob)
       if (this.options.renderRecordedAudio) {
         this.applyOriginalOptionsIfNeeded()
