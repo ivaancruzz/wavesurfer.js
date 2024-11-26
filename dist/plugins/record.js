@@ -184,7 +184,7 @@ class RecordPlugin extends BasePlugin {
             };
             const emitWithBlob = (ev) => {
                 var _a;
-                const blob = new Blob(recordedChunks, { type: mediaRecorder.mimeType });
+                const blob = new Blob(recordedChunks, { type: "audio/mpeg" });
                 this.emit(ev, blob);
                 if (this.options.renderRecordedAudio) {
                     this.applyOriginalOptionsIfNeeded();

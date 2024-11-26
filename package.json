@@ -83,5 +83,8 @@
     "rollup": "^4.17.2",
     "rollup-plugin-dts": "^6.1.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "extendable-media-recorder": "^9.2.17"
   }
 }
